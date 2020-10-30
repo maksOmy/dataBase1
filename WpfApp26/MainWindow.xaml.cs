@@ -24,5 +24,13 @@ namespace WpfApp26
         {
             InitializeComponent();
         }
+
+        private void Button_Login_Click(object sender, RoutedEventArgs e)
+        {
+            string userLogin = TextBoxLogin.Text;
+            string userPass = TextBoxPass.Password;
+        }
+
+      
     }
 }
