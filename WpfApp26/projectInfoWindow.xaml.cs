@@ -23,6 +23,7 @@ namespace WpfApp26
         public projectInfoWindow()
         {
             InitializeComponent();
+            ProjectTable.ItemsSource = db.project_info.ToList();
         }
 
         private void Button_Back_Click(object sender, RoutedEventArgs e)
@@ -30,6 +31,23 @@ namespace WpfApp26
             navWindow nav = new navWindow();
             nav.Show();
             Close();
+        }
+
+        private void Button_Search_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void Button_Add_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Delete_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedItem = (projectInfoWindow)ProjectTable.SelectedItem;
+            db.project_info.Remove(selectedItem);
+            db.SaveChanges();
+
         }
     }
 }

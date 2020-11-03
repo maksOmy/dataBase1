@@ -53,42 +53,6 @@ namespace WpfApp26
                 .IsUnicode(false);
 
             modelBuilder.Entity<project_info>()
-                .Property(e => e.Customer)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<project_info>()
-                .Property(e => e.Cost)
-                .HasPrecision(19, 4);
-
-            modelBuilder.Entity<project_info>()
-                .Property(e => e.Phone)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<project_info>()
-                .Property(e => e.Bank)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<project_info>()
-                .Property(e => e.Account)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<project_info>()
-                .Property(e => e.INN)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<project_info>()
-                .Property(e => e.AddressCust)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<project_info>()
-                .Property(e => e.FioWorker)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<project_info>()
-                .Property(e => e.PhoneWorker)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<project_info>()
                 .HasMany(e => e.worker_info1)
                 .WithOptional(e => e.project_info1)
                 .HasForeignKey(e => e.ProjectID);
