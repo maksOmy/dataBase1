@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="navWindow" Height="78.261" Width="800">
     <Grid Margin="0,0,0,2">
-        <Button Content="Информация о книгах" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" Width="250" Click="Button_Project_Table_Click"/>
-        <Button Content="Информация о читателях" HorizontalAlignment="Left" Margin="274,10,0,0" VerticalAlignment="Top" Width="250" Click="Button_Worker_Table_Click"/>
-        <Button Content="Информация о наличии книг" HorizontalAlignment="Left" Margin="529,10,0,0" VerticalAlignment="Top" Width="250" Click="Button_Customer_Table_Click"/>
+        <Button Content="Информация о книгах" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" Width="250" Click="Button_Books_Table_Click"/>
+        <Button Content="Информация о читателях" HorizontalAlignment="Left" Margin="274,10,0,0" VerticalAlignment="Top" Width="250" Click="Button_Readers_Table_Click"/>
+        <Button Content="Информация о наличии книг" HorizontalAlignment="Left" Margin="529,10,0,0" VerticalAlignment="Top" Width="250" Click="Button_Instance_Table_Click"/>
 
     </Grid>
 </Window>

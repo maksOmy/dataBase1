@@ -79,6 +79,12 @@
     <Compile Include="Readers.cs" />
     <Compile Include="SignUpData.cs" />
     <Compile Include="SystemCatalogOfBook.cs" />
+    <Compile Include="ReadersWindow.xaml.cs">
+      <DependentUpon>ReadersWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceWindow.xaml.cs">
+      <DependentUpon>InstanceWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,6 +102,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="BooksWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReadersWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InstanceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

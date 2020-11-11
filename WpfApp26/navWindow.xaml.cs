@@ -25,24 +25,24 @@ namespace WpfApp26
             InitializeComponent();
         }
 
-        private void Button_Project_Table_Click(object sender, RoutedEventArgs e)
+        private void Button_Books_Table_Click(object sender, RoutedEventArgs e)
         {
             BooksWindow BookTable = new BooksWindow();
             BookTable.Show();
             Close();
         }
-        private void Button_Worker_Table_Click(object sender, RoutedEventArgs e)
+        private void Button_Readers_Table_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-        private void Button_Customer_Table_Click(object sender, RoutedEventArgs e)
-        {
-
+            ReadersWindow ReadersTable = new ReadersWindow();
+            ReadersTable.Show();
+            Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Instance_Table_Click(object sender, RoutedEventArgs e)
         {
-
+            InstanceWindow InstanceTable = new InstanceWindow();
+            InstanceTable.Show();
+            Close();
         }
     }
 }
