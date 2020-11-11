@@ -20,7 +20,7 @@ namespace WpfApp26
     /// </summary>
     public partial class MainWindow : Window
     {
-        Model_Quadro db = new Model_Quadro();
+        public static Model_Library db = new Model_Library();
         public MainWindow()
         {
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace WpfApp26
         {
             string userLogin = TextBoxLogin.Text;
             string userPass = TextBoxPass.Password;
-            if (db.user_info.Where(u => u.Login == userLogin && u.Password == userPass).FirstOrDefault() != null)
+            if (db.SignUpData.Where(u => u.Login == userLogin && u.Password == userPass).FirstOrDefault() != null)
             {
                 navWindow window = new navWindow();
                 window.Show();

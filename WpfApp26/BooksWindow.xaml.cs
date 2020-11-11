@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,18 +13,20 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace WpfApp26
 {
     /// <summary>
     /// Логика взаимодействия для projectInfoWindow.xaml
     /// </summary>
-    public partial class projectInfoWindow : Window
+    public partial class BooksWindow : Window
     {
-        Model_Quadro db = new Model_Quadro();
-        public projectInfoWindow()
+       
+        public BooksWindow()
         {
             InitializeComponent();
-            ProjectTable.ItemsSource = db.project_info.ToList();
+            MainWindow.db.Books.Load();
+            BooksTable.ItemsSource = MainWindow.db.Books.Local;
         }
 
         private void Button_Back_Click(object sender, RoutedEventArgs e)
@@ -44,10 +47,9 @@ namespace WpfApp26
 
         private void Button_Delete_Click(object sender, RoutedEventArgs e)
         {
-            var selectedItem = (projectInfoWindow)ProjectTable.SelectedItem;
-            db.project_info.Remove(selectedItem);
-            db.SaveChanges();
-
+            var selectedItem = (Books)BooksTable.SelectedItem;
+            MainWindow.db.Books.Remove(selectedItem);
+            MainWindow.db.SaveChanges();
         }
     }
 }

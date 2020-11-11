@@ -6,13 +6,15 @@ namespace WpfApp26
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class user_info
+    [Table("SignUpData")]
+    public partial class SignUpData
     {
         [Key]
-        [StringLength(50)]
+        [StringLength(30)]
         public string Login { get; set; }
 
-        [StringLength(50)]
+        [Required]
+        [StringLength(20)]
         public string Password { get; set; }
     }
 }

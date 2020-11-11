@@ -19,7 +19,7 @@ namespace WpfApp26
     /// </summary>
     public partial class navWindow : Window
     {
-        Model_Quadro db = new Model_Quadro();
+        public static Model_Library db = new Model_Library();
         public navWindow()
         {
             InitializeComponent();
@@ -27,8 +27,8 @@ namespace WpfApp26
 
         private void Button_Project_Table_Click(object sender, RoutedEventArgs e)
         {
-            projectInfoWindow projectTable = new projectInfoWindow();
-            projectTable.Show();
+            BooksWindow BookTable = new BooksWindow();
+            BookTable.Show();
             Close();
         }
         private void Button_Worker_Table_Click(object sender, RoutedEventArgs e)

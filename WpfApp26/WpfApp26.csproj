@@ -67,15 +67,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Books.cs" />
+    <Compile Include="InstanceOfBooks.cs" />
+    <Compile Include="Model_Library.cs" />
     <Compile Include="navWindow.xaml.cs">
       <DependentUpon>navWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="projectInfoWindow.xaml.cs">
-      <DependentUpon>projectInfoWindow.xaml</DependentUpon>
+    <Compile Include="BooksWindow.xaml.cs">
+      <DependentUpon>BooksWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagrams.cs" />
-    <Compile Include="user_info.cs" />
-    <Compile Include="worker_info.cs" />
+    <Compile Include="Readers.cs" />
+    <Compile Include="SignUpData.cs" />
+    <Compile Include="SystemCatalogOfBook.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -84,7 +87,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Customer_Inform.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -93,14 +95,12 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="projectInfoWindow.xaml">
+    <Page Include="BooksWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model_Quadro.cs" />
-    <Compile Include="project_info.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -125,7 +125,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
