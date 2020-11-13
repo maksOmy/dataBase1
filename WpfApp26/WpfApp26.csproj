@@ -85,6 +85,9 @@
     <Compile Include="InstanceWindow.xaml.cs">
       <DependentUpon>InstanceWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BooksItemAddWindow.xaml.cs">
+      <DependentUpon>BooksItemAddWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -110,6 +113,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="InstanceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BooksItemAddWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
